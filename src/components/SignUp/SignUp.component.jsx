@@ -4,14 +4,14 @@ import { UserContext } from "../../context/user";
 import { createUser } from "../../utils/axios/CreateUser";
 
 const SignUp = () => {
-  const {alert,showAlert} = useContext(UserContext);
+  const {showAlert} = useContext(UserContext);
   const [document, setDocument] = useState("");
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
   const [phone, setPhone] = useState("");
 
-  let isEmpty = !email || !name || !lastName || !phone;
+  let isEmpty = !email || !name || !lastName || !phone ||!document;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
