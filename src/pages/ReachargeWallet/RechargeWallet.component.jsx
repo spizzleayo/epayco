@@ -16,7 +16,6 @@ const RechargeWallet = () => {
     const handleSubmit = async (e) => {
       e.preventDefault();
       const response = await rechargeWallet({ document,phone,value });
-      console.log(response)
       if(response.data.status === 'error'){
         setBalance('')
         showAlert({msg:response.data.message,type:'danger'})
@@ -60,7 +59,7 @@ const RechargeWallet = () => {
             />
           </Form.Group>
           <Button
-            className="btn-primary"
+            variant="secondary"
             type="submit"
             onClick={handleSubmit}
             disabled={isEmpty}

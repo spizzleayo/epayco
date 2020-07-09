@@ -1,8 +1,8 @@
 import React from "react";
 import SignUp from '../../components/SignUp/SignUp.component';
-import "./home.styles.scss";
+import "./SignUp.styles.scss";
 
-const Home = () => {
+const SignUpPage = () => {
   return (
     <div className="login-container">
       <SignUp/>
@@ -10,4 +10,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default SignUpPage;

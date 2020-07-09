@@ -23,7 +23,7 @@ const ConfirmTransactionForm = ({setToken,handleSubmit,isEmpty , cancelTransacti
             Confirm
           </Button>
           <Button
-            className="btn-primary"
+            variant="secondary"
             type="submit"
             onClick={cancelTransaction}
             block

@@ -51,7 +51,7 @@ const ConsultWallet = () => {
             />
           </Form.Group>
           <Button
-            className="btn-primary"
+            variant="secondary"
             type="submit"
             onClick={handleSubmit}
             disabled={isEmpty}

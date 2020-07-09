@@ -71,7 +71,7 @@ const SignUp = () => {
           />
         </Form.Group>
         <Button
-          className="btn-primary"
+          variant="secondary"
           type="submit"
           onClick={handleSubmit}
           disabled={isEmpty}

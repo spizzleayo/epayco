@@ -22,12 +22,10 @@ const Transaction = () => {
   const createTransactionSubmit = async (e) => {
     e.preventDefault();
     const response = await createTransaction({ document, phone, value });
-    console.log(response);
     if (response.data.status === "error") {
       showAlert({ msg: response.data.message, type: "danger" });
     } else {
       setSession(response.data.session_id);
-      console.log(session_id);
       showAlert({
         msg: response.message,
       });
