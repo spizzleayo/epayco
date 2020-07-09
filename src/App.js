@@ -4,6 +4,7 @@ import Home from "./pages/home/home.component";
 import Alert from "./components/alert/alert.component";
 import "./App.css";
 import ConsultWallet from "./pages/ConsultWallet/ConsultWallet.component";
+import RechargeWallet from "./pages/ReachargeWallet/RechargeWallet.component";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         </Route>
         <Route exact path="/wallet">
           <ConsultWallet />
+        </Route>
+        <Route exact path="/wallet/recharge">
+          <RechargeWallet />
         </Route>
       </Switch>
     </div>
