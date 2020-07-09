@@ -1,0 +1,1 @@
+export const restServiceUrl = 'http://localhost:3001';
