@@ -8,7 +8,7 @@ const AlertComponent = () => {
   useEffect(()=>{
     setTimeout(()=>{
       hideAlert()
-    },6000)
+    },8000)
   },[alert, hideAlert])
   
   return (
